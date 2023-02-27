@@ -1,11 +1,7 @@
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
+<script></script>
 
-<template></template>
+<template>
+  <h1>dfghfdghfsd</h1>
+</template>
 
 <style scoped></style>
