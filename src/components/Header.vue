@@ -4,7 +4,7 @@ export default {
     return {
       logo: {
         src: "",
-        title: "",
+        title: "dc-logo",
       },
       links: [
         {
@@ -64,9 +64,18 @@ export default {
 </script>
 
 <template>
-  <ul v-for="link in links" :key="text">
-    <li>{{ link.text }}</li>
+  <ul>
+    <li><img src="../assets/img/dc-logo.png" alt="dc-logo" /></li>
+    <li v-for="link in links" :key="text">{{ link.text }}</li>
   </ul>
 </template>
 
-<style scoped></style>
+<style scoped>
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin: 0 auto;
+}
+</style>
