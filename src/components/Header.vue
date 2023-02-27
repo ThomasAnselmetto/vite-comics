@@ -64,8 +64,8 @@ export default {
 </script>
 
 <template>
-  <ul v-for="link in links">
-    <li></li>
+  <ul v-for="link in links" :key="text">
+    <li>{{ link.text }}</li>
   </ul>
 </template>
 
