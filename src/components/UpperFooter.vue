@@ -67,7 +67,7 @@ export default {
   <section>
     <div class="container">
       <div class="texts">
-        <div class="col-1">
+        <div class="col">
           <h3>DC COMICS</h3>
           <ul>
             <li v-for="link in links" :key="text">{{ link.text }}</li>
@@ -78,7 +78,7 @@ export default {
             <li>Shop DC Collections</li>
           </ul>
         </div>
-        <div class="col-2">
+        <div class="col">
           <h3>DC</h3>
           <ul>
             <li>Terms Of Use</li>
@@ -94,7 +94,7 @@ export default {
             <li>Contact Us</li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col">
           <h3>SITES</h3>
           <ul>
             <li>DC</li>
@@ -123,6 +123,10 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.col {
+  margin: 1rem 1.5rem 0 0;
+}
+
 .texts {
   display: flex;
 }
@@ -136,6 +140,7 @@ h3 {
   color: white;
 }
 ul {
+  padding-left: 0;
   list-style: none;
   color: gray;
 }

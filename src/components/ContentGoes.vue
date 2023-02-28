@@ -19,7 +19,12 @@ export default {
   </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
 .content-here {
   height: 10rem;
   display: flex;

@@ -20,4 +20,4 @@ export default {
   <BottomFooter />
 </template>
 <!-- NELL'APP.VUE LO STYLE NON HA LO SCOPED -->
-<style></style>
+<style lang="scss"></style>

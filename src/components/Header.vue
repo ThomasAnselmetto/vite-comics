@@ -67,17 +67,23 @@ export default {
   <div class="container">
     <div><img src="../assets/img/dc-logo.png" alt="dc-logo" /></div>
     <ul>
-      <li v-for="link in links" :key="text">{{ link.text }}</li>
+      <li v-for="link in links" :key="text">
+        <a href="#">{{ link.text }}</a>
+      </li>
     </ul>
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  li {
+    font-weight: 700;
+  }
 }
 ul {
   width: 850px;
@@ -87,5 +93,9 @@ ul {
 }
 li {
   margin: 0 auto;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 </style>
