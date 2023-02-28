@@ -64,16 +64,26 @@ export default {
 </script>
 
 <template>
-  <ul>
-    <li><img src="../assets/img/dc-logo.png" alt="dc-logo" /></li>
-    <li v-for="link in links" :key="text">{{ link.text }}</li>
-  </ul>
+  <div class="container">
+    <div><img src="../assets/img/dc-logo.png" alt="dc-logo" /></div>
+    <ul>
+      <li v-for="link in links" :key="text">{{ link.text }}</li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
 ul {
+  width: 850px;
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 li {
   margin: 0 auto;

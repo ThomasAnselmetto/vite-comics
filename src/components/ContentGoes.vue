@@ -13,7 +13,9 @@ export default {
 
 <template>
   <section class="content-here">
-    <h2>{{ putTheContent.text }}</h2>
+    <div class="container">
+      <h2>{{ putTheContent.text }}</h2>
+    </div>
   </section>
 </template>
 
