@@ -1,21 +1,14 @@
 <script>
 export default {
   data() {
-    return {
-      putTheContent: {
-        type: "content",
-        text: "-->Content goes here-->",
-      },
-    };
+    return {};
   },
 };
 </script>
 
 <template>
   <section class="content-here">
-    <div class="container">
-      <h2>{{ putTheContent.text }}</h2>
-    </div>
+    <div class="container"></div>
   </section>
 </template>
 
